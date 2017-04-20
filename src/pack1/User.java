@@ -11,11 +11,7 @@ import java.io.Serializable;
  */
 public class User implements Serializable {
 
-	/**
-	 * @param id
-	 * @param name
-	 * @param pass
-	 */
+
 	public User(String id, String name, String pass) {
 		super();
 		this.id = id;

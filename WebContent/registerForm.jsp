@@ -4,16 +4,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>user 登録</title>
 </head>
 <body>
-<form action="RegisterUser1"><br/><br/>
+<form action="ResisterUser1" method="get">
+
 <br/><br/>
 ログインID<input type="text" name = "id"/><br/>
 パスワード<input type ="password" name ="pass"><br/>
 名前<input type ="text" name ="name" /><br/>
 <input type ="submit" value ="ENTER"/>
 
+<%
+
+//User user = (User)session.getAttribute("resisterUser");
+
+%>
 
 
 </form>
