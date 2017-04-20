@@ -7,7 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="RegisterUser1"><br/>
+<form action="RegisterUser1"><br/><br/>
+<br/><br/>
 ログインID<input type="text" name = "id"/><br/>
 パスワード<input type ="password" name ="pass"><br/>
 名前<input type ="text" name ="name" /><br/>
