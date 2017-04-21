@@ -16,7 +16,7 @@ String st2 = (String)session.getAttribute("ss");
 %>
 <%=st %><br>
 <%=st2 %><br>
-<%=session.getId() %>
+sessionID ---><%=session.getId() %>
 
 </body>
 </html>

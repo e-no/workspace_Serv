@@ -13,6 +13,6 @@
 %>
 <%=application.getAttribute("app") %><br>
 <%=session.getAttribute("ss") %><br>
-
+sessionID ---><%=session.getId() %>
 </body>
 </html>
