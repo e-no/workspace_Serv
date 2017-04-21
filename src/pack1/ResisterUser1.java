@@ -38,7 +38,7 @@ public class ResisterUser1 extends HttpServlet {
 		//[action]値をリクエストパラメータから取得
 		String action  = request.getParameter("action");
 		if(action == null){ //登録の開始のリクエスト承認
-			forwardPath = "WebContent/registerForm.jsp";
+			forwardPath = "/registerForm.jsp";
 		}else if(action.equals("done")){
 		HttpSession session =request.getSession();
 		User resisterUser = (User)session.getAttribute("resisterUser");
@@ -51,7 +51,7 @@ public class ResisterUser1 extends HttpServlet {
 		session.removeAttribute("resisterUser");
 
 		//登録後のフォアード先を設定
-		forwardPath = "WebContent/registerForm.jsp";
+		forwardPath = "/registerForm.jsp";
 
 		}
 	//設定されたフォアード先にフォアード
@@ -78,7 +78,7 @@ public class ResisterUser1 extends HttpServlet {
 		session.setAttribute("resisterUser",resisterUser);
 
 		//フォアード
-		RequestDispatcher dispather = request.getRequestDispatcher("WebContent/registerForm.jsp");
+		RequestDispatcher dispather = request.getRequestDispatcher("/registerForm.jsp");
 		dispather.forward(request, response);
 
 
