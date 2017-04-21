@@ -9,8 +9,8 @@
 <body>
 <%   SiteEv siteEv = (SiteEv) application.getAttribute("siteEv");	%>
 <p>
-<a href="/Index?action =like"><input type = "submit" value = "いいね"></a>:<%=siteEv.getLike()%><br>
-<a href= "/Index?action =dislike"><input type = "submit" value = "いくないね"></a>:<%=siteEv.getDislike()%><br>
+<a href="/Index.java?action =like"><input type = "submit" value = "いいね"></a>:<%=siteEv.getLike()%><br>
+<a href= "/Index.java?action =dislike"><input type = "submit" value = "いくないね"></a>:<%=siteEv.getDislike()%><br>
 </p>
 <h2>RESULT</h2>
 <p>…</p>
